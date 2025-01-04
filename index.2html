@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Comparison Table</title>
+    <style>
+        body {
+            font-family: "PT Serif";
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: start;
+        }
 
-th, td {
-  text-align: left;
-  border: 1px solid #d9d2d2;
-}
-th {
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: start;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: start;
+            font-size: 20px;
+        }
+
+        th, td {
+            border: 1px solid #d9d2d2;
+        }
+
+        th {
             background-color: #A94C5E;
-            }
-.other-bg {
+            color: white;
+            text-align: start;
+            tab-size: 30px;
+            padding: 40px;
+        }
+        td{
+            padding: 50px;
+        }
+        .other-bg {
             background-color: #DDDDDD;
         }
         .highlight {
@@ -40,28 +69,11 @@ th {
         .cta-button:hover {
             background-color: #a94f5e;
         }
-
-tr:nth-child(even) {background-color: #f2f2f2;}
-@media (min-width: 769px) {
-            th,td {
-                padding: 50px;
-            }
-        }
-@media (min-width: 580px) and (max-width: 768px){
-            th,td {
-                padding: 40px;
-            }
-        }
-@media (max-width: 579px) {
-            th,td {
-                padding: 15px;
-            }
-        }
-</style>
+    </style>
 </head>
 <body>
-<div style="overflow-x: auto;">
-<table>
+    <div class="container">
+        <table>
             <thead>
                 <tr>
                     <th>Feature</th>
@@ -118,7 +130,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
                 </tr>
             </tbody>
         </table>
-</div>
-
+    </div>
 </body>
 </html>
